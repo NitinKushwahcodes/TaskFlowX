@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow — Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="auth-page">
+
+  <div class="auth-box">
+
+    <!-- Logo -->
+    <div class="auth-logo">
+      <div class="logo-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+        </svg>
+      </div>
+      <h1>TaskFlow</h1>
+      <p>Manage your tasks, simply.</p>
+    </div>
+
+    <!-- Tab switcher -->
+    <div class="auth-tabs">
+      <button class="auth-tab active" id="tab-login"    onclick="switchTab('login')">Login</button>
+      <button class="auth-tab"        id="tab-register" onclick="switchTab('register')">Register</button>
+    </div>
+
+    <!-- Card -->
+    <div class="auth-card">
+
+      <!-- Alert box (shared) -->
+      <div class="alert" id="authAlert" role="alert"></div>
+
+      <!-- ── LOGIN FORM ── -->
+      <form class="auth-form" id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="loginEmail">Email address</label>
+          <input type="email" id="loginEmail" placeholder="you@example.com" autocomplete="email" required />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="Enter your password" autocomplete="current-password" required />
+        </div>
+        <button type="submit" class="btn btn-primary" id="loginBtn">
+          Login
+        </button>
+      </form>
+
+      <!-- ── REGISTER FORM ── -->
+      <form class="auth-form" id="registerForm" novalidate style="display:none;">
+        <div class="form-group">
+          <label for="regName">Username</label>
+          <input type="text" id="regName" placeholder="e.g. NitinK" autocomplete="username" required />
+        </div>
+        <div class="form-group">
+          <label for="regEmail">Email address</label>
+          <input type="email" id="regEmail" placeholder="you@example.com" autocomplete="email" required />
+        </div>
+        <div class="form-group">
+          <label for="regPassword">Password</label>
+          <input type="password" id="regPassword" placeholder="At least 6 characters" autocomplete="new-password" required />
+        </div>
+        <button type="submit" class="btn btn-primary" id="registerBtn">
+          Create Account
+        </button>
+      </form>
+
+      <!-- Switch link -->
+      <p class="auth-footer" id="authFooter">
+        Don't have an account? <span onclick="switchTab('register')">Register</span>
+      </p>
+
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
