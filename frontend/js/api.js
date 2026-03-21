@@ -1,4 +1,4 @@
-const BASE_URL = 'https://taskflow-api.onrender.com/api/v1';
+const BASE_URL = 'https://taskflowx-ewxr.onrender.com/';
 
 // Token and user data helpers.
 // Stored in localStorage for simplicity — in production, httpOnly cookies are safer.
