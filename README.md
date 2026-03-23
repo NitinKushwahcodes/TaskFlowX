@@ -9,8 +9,6 @@ Users can register, log in, and manage their tasks with status tracking, priorit
 ## 🚀 Live Demo
 👉 https://taskflowxt.netlify.app/
 
----
-
 ## 📌 How to Use
 
 1. Open the live link above  
@@ -25,8 +23,6 @@ Users can register, log in, and manage their tasks with status tracking, priorit
 - ⚡ Set priority levels (low, medium, high)  
 - 📄 Navigate through paginated results  
 - ✏️ Update or delete tasks anytime  
-
----
 
 ## 🌐 Deployment
 
