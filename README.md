@@ -6,6 +6,36 @@ Users can register, log in, and manage their tasks with status tracking, priorit
 
 ---
 
+## 🚀 Live Demo
+👉 https://taskflowxt.netlify.app/
+
+---
+
+## 📌 How to Use
+
+1. Open the live link above  
+2. Register a new account using your email and password  
+3. Login with your credentials  
+4. You will be redirected to the dashboard  
+
+### On Dashboard:
+- ➕ Create new tasks with title, description, priority, and due date  
+- 📋 View all your tasks  
+- 🔍 Filter tasks by status (todo, in-progress, done)  
+- ⚡ Set priority levels (low, medium, high)  
+- 📄 Navigate through paginated results  
+- ✏️ Update or delete tasks anytime  
+
+---
+
+## 🌐 Deployment
+
+- Backend deployed on Render  
+- Frontend deployed and accessible via the live link above  
+- MongoDB Atlas used as cloud database  
+
+---
+
 ## Tech Stack
 
 | | |
